@@ -1,0 +1,145 @@
+#slider_images li{
+    border:1px solid #ddd;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    width: 90px;
+    cursor: move;
+    float: left;
+    margin: 15px 10px 15px 15px;
+    height: 50px;
+}
+div#image-prev img {
+    margin-right: 5px;
+}
+#rts_frm tr td:first-child,#rts_frm tr th:first-child {
+    width: 150px;
+}
+#rts_frm tr th:first-child {
+    padding-left: 10px;
+}
+form#rts_frm,#image-sort {
+    width: 50%;
+    float: left;
+}
+form#rts_frm table{
+    background: #fff;
+    border-radius: 5px;
+}
+.rt_delete{
+    float: right;
+    margin-top: -17px;
+    margin-right: -17px;
+    font-size: 15px;
+    background: #a5b8bf;
+    border-radius: 50%;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 13px;
+    text-align: center;
+}
+.rt_delete a{
+    color:#fff;
+    text-decoration: none;
+    height: 15px;
+    width: 15px;
+    display: block;
+    padding-left: 0.5px;
+}
+div#image-prev {
+    border: 2px dashed #ccc;
+    margin: 10px 0 5px;
+    padding: 10px;
+    overflow: auto;
+    max-height: 450px;
+    text-align: left;
+    max-width: 700px;
+}
+div#image-prev p{
+    text-align: center;
+}
+#rts_frm i{
+    margin-top: 3px;
+}
+tr.section_title {
+    border-bottom: 1px solid #ececec;
+}
+.minicolors input[type=hidden] + .minicolors-swatch{
+    height: 28px;
+}
+tr.section_title td {
+    font-size: 16px;
+    color: #0073aa;
+    font-weight: 500;
+}
+input#save_rt_slider,#delete_all_images {
+    margin: 10px 0;
+}
+.shortcode_warning{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.image-preview{
+    height: 50px;
+    width: 90px;
+}
+.rt_slider img{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rt_slider .slick-center img{
+    transform: scale(1.08);
+}
+.rt_info{
+    padding: 15px 0;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+.rt_info h4 b{
+    font-weight: 700;
+}
+.rt_info h4,.rt_info h3{
+    padding-left: 10px;
+}
+div#image-prev .img {
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 70px;
+    margin: 5px 2px;
+    vertical-align: top;
+    width: 70px;
+    padding: 3px 5px 8px 5px;
+    position: relative;
+}
+div#image-prev .img .rt_delete{
+    margin-top: -12px;
+    margin-right: -12px;
+}
+.slick-initialized .slick-slide{
+    overflow: hidden;
+}
+.slick-dots{
+    bottom: -50px !important;
+}
+.minicolors-theme-default .minicolors-input{
+    height: 26px !important;
+}
+.minicolors-theme-default .minicolors-swatch {
+    top: 1px !important;
+    left: 1px !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+.home .entry-content > h4{
+    padding-right: 10px;
+}
