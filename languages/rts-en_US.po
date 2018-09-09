@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RT Slider\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-09 08:11+0000\n"
+"PO-Revision-Date: 2018-09-09 08:11+0000\n"
+"Last-Translator: root <shwetadanej@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: templates/rts_view.php:12
+msgid " Choose Images"
+msgstr ""
+
+#: templates/rts_view.php:15
+msgid " Remove Images"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "#"
+msgstr ""
+
+#: classes/class.rts_main.php:32
+msgid "Add"
+msgstr ""
+
+#: templates/rts_view.php:177
+msgid "Add <b>[rt_slideshow]</b> in your post/page to display this slider."
+msgstr ""
+
+#: classes/class.rts_main.php:35
+msgid "Are you sure you want to remove all images ?"
+msgstr ""
+
+#: templates/rts_view.php:168
+msgid "Arrow Color"
+msgstr ""
+
+#: templates/rts_view.php:145
+msgid "Arrows"
+msgstr ""
+
+#: templates/rts_view.php:103
+msgid "Auto Play"
+msgstr ""
+
+#: templates/rts_view.php:160
+msgid "Bullet Color"
+msgstr ""
+
+#: templates/rts_view.php:131
+msgid "Bullets"
+msgstr ""
+
+#: templates/rts_view.php:61
+msgid "Center Mode"
+msgstr ""
+
+#: templates/rts_view.php:10
+msgid "Choose Slider Images"
+msgstr ""
+
+#: classes/class.rts_main.php:31
+msgid "Choose slider images"
+msgstr ""
+
+#: templates/rts_view.php:89
+msgid "Fade"
+msgstr ""
+
+#: templates/rts_view.php:27
+msgid "General settings"
+msgstr ""
+
+#: templates/rts_view.php:176
+msgid "How to use ?"
+msgstr ""
+
+#: classes/class.rts_main.php:33
+msgid "Image order has been changed"
+msgstr ""
+
+#. Description of the plugin
+msgid "Image Slider"
+msgstr ""
+
+#: templates/rts_view.php:31
+msgid "Items"
+msgstr ""
+
+#: templates/rts_view.php:75
+msgid "Lazy Loading"
+msgstr ""
+
+#: templates/rts_view.php:127
+msgid "Navigation and pagination settings"
+msgstr ""
+
+#: templates/rts_view.php:20
+msgid "No Slider Images"
+msgstr ""
+
+#. Name of the plugin
+msgid "RT Slider"
+msgstr ""
+
+#. Author of the plugin
+msgid "Shweta Danej"
+msgstr ""
+
+#: templates/rts_view.php:53
+msgid "Slide to scroll"
+msgstr ""
+
+#: templates/rts_view.php:45
+msgid "Slide to show"
+msgstr ""
+
+#: templates/rts_view.php:7
+msgid "Slider Images"
+msgstr ""
+
+#: templates/rts_view.php:117
+msgid "Speed"
+msgstr ""
+
+#: classes/class.rts_main.php:34
+msgid "There was an error while savingsort order"
+msgstr ""
+
+#: classes/class.rts_main.php:144
+msgid "This slider was removed."
+msgstr ""
+
+#: classes/class.rts_main.php:144
+msgid "Warning! "
+msgstr ""
+
+#: classes/class.rts_main.php:94
+msgid "You are not allow to do this !"
+msgstr ""
