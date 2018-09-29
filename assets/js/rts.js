@@ -83,20 +83,23 @@ jQuery(function ($) {
             mediaUploader.open();
         },
         delete_image: function () {
-            var key = $(this).parent().attr('id');
-            $.ajax({
-                url: ajaxurl,
-                type: 'POST',
-                data: {action: 'delete_image', key: key},
-                success: function (response) {
-                    var data = JSON.parse(response);
-                    if (data.status == true) {
-                        $("#slider_images li#" + key).remove();
-                    } else {
-                        alert(data.msg);
+            var conf = confirm(rts_obj.confirm);
+            if(conf){
+                var key = $(this).parent().attr('id');
+                $.ajax({
+                    url: ajaxurl,
+                    type: 'POST',
+                    data: {action: 'delete_image', key: key},
+                    success: function (response) {
+                        var data = JSON.parse(response);
+                        if (data.status == true) {
+                            $("#slider_images li#" + key).remove();
+                        } else {
+                            alert(data.msg);
+                        }
                     }
-                }
-            });
+                });
+            }
         },
         check_multiple: function () {
             if ($('input[name=items]:checked').val() == 0) {

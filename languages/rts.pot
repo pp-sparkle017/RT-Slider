@@ -36,7 +36,7 @@ msgid "Add <b>[rt_slideshow]</b> in your post/page to display this slider."
 msgstr ""
 
 #: classes/class.rts_main.php:35
-msgid "Are you sure you want to remove all images ?"
+msgid "Are you sure ?"
 msgstr ""
 
 #: templates/rts_view.php:168

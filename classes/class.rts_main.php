@@ -32,7 +32,7 @@ if (!class_exists("RTS_Main")) {
                     'add' => __('Add', 'rts'),
                     'success' => __('Image order has been changed', 'rts'),
                     'error' => __('There was an error while savingsort order', 'rts'),
-                    'confirm' => __("Are you sure you want to remove all images ?", "rts")
+                    'confirm' => __("Are you sure ?", "rts")
                 ));
             } else {
                 wp_enqueue_style('slick-theme', RTS_URL . 'assets/slick/slick.css');
@@ -141,7 +141,7 @@ if (!class_exists("RTS_Main")) {
             } else {
                 global $post;
                 if (strpos($post->post_content, '[rt_slideshow]') !== false) {
-                    $html .= sprintf("<div class='shortcode_warning'><strong>%s</strong>%s</div>", __("Warning! ", "rts"), __("This slider was removed.", "rts"));
+                    $html .= sprintf("<div class='shortcode_warning'><strong>%s</strong>%s</div>", __("Warning! ", "rts"), __("No images found in the slider.", "rts"));
                 }
             }
             $html .= "</div>";

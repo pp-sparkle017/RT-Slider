@@ -3,7 +3,7 @@
 /*
  * Plugin Name: RT Slider
  * Plugin URI: #
- * Description: Image Slider
+ * Description: A demo on WordPress shortcode which includes a slider plugin with jQuery slick slider.
  * Version: 1.0.0
  * Author: Shweta Danej
  * Author URI: #
