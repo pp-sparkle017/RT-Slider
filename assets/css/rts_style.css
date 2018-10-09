@@ -8,7 +8,7 @@
     width: 90px;
     cursor: move;
     float: left;
-    margin: 15px 10px 15px 15px;
+    margin: 15px 10px 15px 10px;
     height: 50px;
 }
 div#image-prev img {
@@ -20,10 +20,10 @@ div#image-prev img {
 #rts_frm tr th:first-child {
     padding-left: 10px;
 }
-form#rts_frm,#image-sort {
+/*form#rts_frm,#image-sort {
     width: 50%;
     float: left;
-}
+}*/
 form#rts_frm table{
     background: #fff;
     border-radius: 5px;
@@ -142,4 +142,13 @@ div#image-prev .img .rt_delete{
 }
 .home .entry-content > h4{
     padding-right: 10px;
+}
+.rts_shortcode_metabox {
+    border: 2px dashed #ccc;
+    padding: 0 10px;
+}
+div#image-sort:after {
+    content: "";
+    display: table;
+    clear: both;
 }

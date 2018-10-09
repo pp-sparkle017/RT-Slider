@@ -1,4 +1,5 @@
 jQuery(function ($) {
+    var id = $("#post_ID").val();
     var rts = {
         init: function () {
             $('#upload-button').on('click', this.upload_image);
@@ -10,7 +11,6 @@ jQuery(function ($) {
             $('input[type=radio][name=items]').change(function () {
                 rts.check_multiple();
             });
-
             var sortList = $('ul#slider_images');
             sortList.sortable({
                 update: function (event, ui) {
@@ -18,7 +18,7 @@ jQuery(function ($) {
                         url: ajaxurl,
                         type: 'POST',
                         dataType: 'json',
-                        data: {action: 'save_order', order: sortList.sortable('toArray').toString(), security: rts_obj.security},
+                        data: {action: 'save_order',id:id, order: sortList.sortable('toArray').toString(), security: rts_obj.security},
                         success: function (response) {
                             $('div#message').remove();
                             if (true === response.success) {
@@ -89,7 +89,7 @@ jQuery(function ($) {
                 $.ajax({
                     url: ajaxurl,
                     type: 'POST',
-                    data: {action: 'delete_image', key: key},
+                    data: {action: 'delete_image', key: key,id:id},
                     success: function (response) {
                         var data = JSON.parse(response);
                         if (data.status == true) {
@@ -123,7 +123,7 @@ jQuery(function ($) {
                 $.ajax({
                     url: ajaxurl,
                     type: 'POST',
-                    data: {action: 'delete_all_images'},
+                    data: {action: 'delete_all_images',id:id},
                     success: function (response) {
                         location.reload();
                     }
