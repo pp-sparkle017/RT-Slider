@@ -127,6 +127,7 @@ div#image-prev .img .rt_delete{
 }
 .slick-initialized .slick-slide{
     overflow: hidden;
+    display: flex !important;
 }
 .slick-dots{
     bottom: -50px !important;
@@ -151,4 +152,10 @@ div#image-sort:after {
     content: "";
     display: table;
     clear: both;
+}
+#rts_metabox .dashicons{
+    vertical-align: middle;
+}
+.rt_slider{
+    margin: auto;
 }

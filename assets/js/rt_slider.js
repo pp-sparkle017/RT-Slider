@@ -1,8 +1,8 @@
 jQuery(function ($) {
     var rt_slider = {
         init: function () {
-            var settings = rts_obj.slider;
-            var status = rts_obj.slider_status;
+            var settings = JSON.parse($("#rtsettings").attr("data-settings"));
+            var status = $("#rtstatus").attr("data-status");
             var slide_to_show = settings.items == true ? settings.slide_to_show : 1;
             var slide_to_scroll = settings.items == true ? settings.slide_to_scroll : 1;
             var fade = settings.items == false && settings.fade != false ? true : false;
@@ -54,7 +54,7 @@ jQuery(function ($) {
                             }
                         }]
                 });
-                $('head').append('<style>.slick-prev:before, .slick-next:before{color: ' + settings.arrow_color + ' !important;}.slick-dots li.slick-active button:before,.slick-dots li button:before{color:'+settings.bullet_color+'}</style>');
+                $('head').append('<style>.slick-prev:before, .slick-next:before{color: ' + settings.arrow_color + ' !important;}.slick-dots li.slick-active button:before,.slick-dots li button:before{color:'+settings.bullet_color+'}.rt_slider{width:' + settings.width + 'px;height:' + settings.height + 'px;}.slick-initialized .slick-slide{height:' + settings.height + 'px;}</style>');
             }
         }
     }

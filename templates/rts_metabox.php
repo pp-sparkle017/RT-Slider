@@ -55,6 +55,31 @@
                     ?>
                 </td>
             </tr>
+            <tr>
+                <th>
+                    <?php esc_html_e("Width", "rts"); ?>
+                </th>
+                <td>
+                    <input type="number" name="width" value="<?php echo !empty($settings['width']) ? esc_attr($settings['width']) : 1100; ?>">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <?php esc_html_e("Height", "rts"); ?>
+                </th>
+                <td>
+                    <input type="number" name="height" value="<?php echo !empty($settings['height']) ? esc_attr($settings['height']) : 300; ?>">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <?php esc_html_e("Speed", "rts"); ?>
+                </th>
+                <td>
+                    <?php $speed = !empty($settings['speed']) ? $settings['speed'] : 600; ?>
+                    <input type="number" name="speed" value="<?php echo esc_attr($speed) ?>">
+                </td>
+            </tr>
             <tr class="multiple_settings">
                 <th>
                     <?php esc_html_e("Slide to show", "rts"); ?>
@@ -125,15 +150,6 @@
                         echo sprintf("<input type='radio' name='autoplay' value='%s' %s> %s ", $key, $selected, $value);
                     }
                     ?>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <?php esc_html_e("Speed", "rts"); ?>
-                </th>
-                <td>
-                    <?php $speed = !empty($settings['speed']) ? $settings['speed'] : 600; ?>
-                    <input type="number" name="speed" value="<?php echo esc_attr($speed) ?>">
                 </td>
             </tr>
         </table>
