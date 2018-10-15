@@ -142,8 +142,8 @@ if (!class_exists("RTS_Main")) {
                 'slide_to_scroll' => !empty($_POST['slide_to_scroll']) ? (int)$_POST['slide_to_scroll'] : 1,
                 'bullet_color' => !empty($_POST['bullet_color']) ? $_POST['bullet_color'] : "#000",
                 'arrow_color' => !empty($_POST['arrow_color']) ? $_POST['arrow_color'] : "#000",
-                'width' => !empty($_POST['width']) ? $_POST['width'] : 1100,
-                'height' => !empty($_POST['height']) ? $_POST['height'] : 300,
+                'width' => !empty($_POST['width']) ? $_POST['width'] : 900,
+                'height' => !empty($_POST['height']) ? $_POST['height'] : 250,
             );
             update_post_meta($id,'rt_slider_options', $settings);
         }
@@ -215,7 +215,7 @@ if (!class_exists("RTS_Main")) {
                 $html .= '<div id="rtstatus" data-status="'.$slider_status.'"></div>';
                 $html .= "<div class='rt_slider'>";
                 foreach ($slider_images as $key => $value) {
-                    if ($settings['items'] == true && $settings['lazy_load'] == "ondemand") {
+                    if ($settings['slide_to_show'] > 1 && $settings['lazy_load'] == "ondemand") {
                         $html .= sprintf("<div class='rt_image'><img data-lazy='%s'/></div>", wp_get_attachment_url($key));
                     } else {
                         $html .= sprintf("<div class='rt_image'><img src='%s'/></div>", wp_get_attachment_url($key));

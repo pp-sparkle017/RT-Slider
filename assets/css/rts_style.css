@@ -158,4 +158,5 @@ div#image-sort:after {
 }
 .rt_slider{
     margin: auto;
+    max-width: 100%;
 }

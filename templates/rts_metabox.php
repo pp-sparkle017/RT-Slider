@@ -60,7 +60,7 @@
                     <?php esc_html_e("Width", "rts"); ?>
                 </th>
                 <td>
-                    <input type="number" name="width" value="<?php echo !empty($settings['width']) ? esc_attr($settings['width']) : 1100; ?>">
+                    <input type="number" name="width" value="<?php echo !empty($settings['width']) ? esc_attr($settings['width']) : 900; ?>">
                 </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@
                     <?php esc_html_e("Height", "rts"); ?>
                 </th>
                 <td>
-                    <input type="number" name="height" value="<?php echo !empty($settings['height']) ? esc_attr($settings['height']) : 300; ?>">
+                    <input type="number" name="height" value="<?php echo !empty($settings['height']) ? esc_attr($settings['height']) : 250; ?>">
                 </td>
             </tr>
             <tr>
@@ -122,6 +122,7 @@
                         echo sprintf("<input type='radio' name='lazy_load' value='%s' %s> %s ", $key, $selected, $value);
                     }
                     ?>
+                    <p class="description"><?php esc_html_e("It will work with multiple slides","rts"); ?></p>
                 </td>
             </tr>
             <tr id="fade">

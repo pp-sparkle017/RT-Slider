@@ -6,7 +6,8 @@ jQuery(function ($) {
             var slide_to_show = settings.items == true ? settings.slide_to_show : 1;
             var slide_to_scroll = settings.items == true ? settings.slide_to_scroll : 1;
             var fade = settings.items == false && settings.fade != false ? true : false;
-            var lazyload = settings.items == true && settings.lazy_load != false ? 'ondemand' : false;
+            var lazyload = slide_to_show > 1 && settings.lazy_load == "ondemand" ? "ondemand" : false;
+            console.log(lazyload);
             var center = settings.items == true && settings.center_mode != false ? true : false;
             if (status == "active") {
                 $('.rt_slider').slick({
